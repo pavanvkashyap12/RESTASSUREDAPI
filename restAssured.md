@@ -95,6 +95,39 @@ Base URL/resource/(Query/Path)Parameters
 - given -> all input details to submit to API
 - when ->  submit the API -> resource and HTTP Method go in when rest all in given
 - then -> validate the response
-
-
 - install testng plugin
+
+
+### JIRA 
+- we can also send images,pdf etc via rest assured api calls
+- jira spaces -> scrum -> name -> next
+
+### JIRA AUTHENTICATION 
+- Supply basic auth headers
+- You can construct and send basic auth headers. To do this you perform the following steps:
+- Generate an API token for Jira using your Atlassian Account.
+- Build a string of the form ```useremail:api_token.```
+- BASE64 encode the string.
+- Linux/Unix/MacOS:
+```echo -n "user@example.com:api_token_string" | base64```
+- Windows 7 and later, using Microsoft Powershell:
+```
+$Text = ‘user@example.com:api_token_string’
+$Bytes = [System.Text.Encoding]::UTF8.GetBytes($Text)
+$EncodedText = [Convert]::ToBase64String($Bytes)
+$EncodedText
+```
+- Supply an Authorization header with content Basic followed by the encoded string. For example, the string fred:fred encodes to ZnJlZDpmcmVk in base64, so you would make the request as follows: 
+```curl -D- \
+   -X GET \
+   -H "Authorization: Basic ZnJlZDpmcmVk" \
+   -H "Content-Type: application/json" \
+   "https://your-domain.atlassian.net/rest/api/2/issue/QA-31"```
+   
+- create an issue 
+``` curl -D- -u {username}:{api_token} -X POST -H "X-Atlassian-Token: nocheck" -F "file=@{path/to/file}" https://{your-domain}.atlassian.net/rest/api/3/issue/{issue-key}/attachments
+```
+https://{url}/rest/api/3/issue , in headers Authorisation Basic base64 encoded, POST, body
+- send an attachment 
+https://{url}/rest/api/3/issue/{issue_id}/attachments
+- Headers Basic base64 encoded,Header X-Atlassian_Token no-checkfile , body we have given file body -> from-data -> file -> attach a file
