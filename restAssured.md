@@ -95,3 +95,6 @@ Base URL/resource/(Query/Path)Parameters
 - given -> all input details to submit to API
 - when ->  submit the API -> resource and HTTP Method go in when rest all in given
 - then -> validate the response
+
+
+- install testng plugin

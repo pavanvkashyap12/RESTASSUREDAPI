@@ -58,5 +58,16 @@ public class Payload {
 		 
 		return payload;
 	}
+	
+	public static String addBook(String name, String isbn, String aisle, String author) {
+		String payload = "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"" + name + "\",\r\n"
+				+ "\"isbn\":\"" + isbn + "\",\r\n"
+				+ "\"aisle\":\"" + aisle + "\",\r\n"
+				+ "\"author\":\"" + author + "\"\r\n"
+				+ "}";
+		return payload ;
+	}
 
 }
