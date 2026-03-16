@@ -1,0 +1,9 @@
+https://eventhub.rahulshettyacademy.com/login
+https://rahulshettyacademy.com/client/#/dashboard/dash
+https://rahulshettyacademy.com/seleniumPractise/#/
+https://rahulshettyacademy.com/AutomationPractice/
+https://rahulshettyacademy.com/loginpagePractise/
+https://rahulshettyacademy.com/dropdownsPractise/
+https://rahulshettyacademy.com/locatorspractice/
+https://rahulshettyacademy.com/angularpractice/
+https://rahulshettyacademy.com/upload-download-test/

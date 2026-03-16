@@ -1,0 +1,9 @@
+# Use this workspace to collaborate
+workspace:
+  id: 35da4eb9-76aa-43dc-8ffc-059423845cf6
+
+localResources:
+  collections:
+    - ..\ClientCredentialsOAuth.postman_collection (1).json
+    - ..\Library+API.postman_collection.json
+    - ..\RSA_Resources\ClientCredentialsOAuth.postman_collection.json
