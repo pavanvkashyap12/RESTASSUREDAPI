@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Jira.BasicJiraAuthentication">
+      <class name="oAuth.BasicAuthClientCredentials">
         <methods>
-          <include name="basicAuth"/>
+          <include name="getAccesToken"/>
         </methods>
-      </class> <!-- Jira.BasicJiraAuthentication -->
+      </class> <!-- oAuth.BasicAuthClientCredentials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
