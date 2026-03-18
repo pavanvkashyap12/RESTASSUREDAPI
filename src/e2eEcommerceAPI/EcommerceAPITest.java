@@ -93,6 +93,8 @@ public class EcommerceAPITest {
 		JsonPath js1 = new JsonPath(deleteProductResponse);
 		Assert.assertEquals("Product Deleted Successfully", js1.get("message"));
 		
+		// sometimes API needs SSL certification to by pass that we can use given().relaxedHTTPSValidation()
+		
 		
 		
 
